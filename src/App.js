@@ -15,7 +15,7 @@ export default function App() {
     if (existingCar) {
       console.log(existingCar);
       const updateCart = cartItems.map((i) => {
-        i === existingCar ? { ...i, quantity: i.quantity + 1 } : i;
+        i === existingCar ? { ...i, quantity: i.quantity + car.quantity } : i;
       });
       console.log(updateCart);
       setcartItems(updateCart);
